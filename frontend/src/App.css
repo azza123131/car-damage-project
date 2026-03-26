@@ -1,0 +1,182 @@
+/* Main layout */
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #131d2b;
+}
+
+/* ---------------- LEFT PANEL ---------------- */
+
+.left-panel {
+  width: 200px;
+  background: #131d2b;
+  padding: 25px;
+  border-right: 5px solid #1a273a;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.05);
+}
+
+.left-panel h2 {
+  margin-top: 0;
+}
+
+.left-panel input[type="file"] {
+  padding: 6px;
+}
+
+
+/* Predict button */
+
+.left-panel button {
+  padding: 10px;
+  background: #323b44;
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.left-panel button:hover {
+  background: #323b44;
+}
+
+.left-panel button:disabled {
+  background: #9aa5b1;
+  cursor: not-allowed;
+}
+
+/* ---------------- CENTER PANEL ---------------- */
+
+.center-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.output-image {
+  width: 90%;
+  max-width: 1200px;
+  max-height: 90vh;
+  border-radius: 10px;
+  border: 1px solid #333;
+  object-fit: contain;
+}
+
+/* Object counter */
+
+.object-count {
+  position: absolute;
+  bottom: -90px;
+  left: 90%;
+  transform: translateX(-50%);
+  background: #131d2b;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+/* ---------------- RIGHT PANEL ---------------- */
+
+.right-panel {
+  width: 200px;
+  background: #131d2b;
+  padding: 25px;
+  border-left: 5px solid #1a273a;
+  box-shadow: -2px 0 6px rgba(0,0,0,0.05);
+  overflow-y: auto;
+}
+
+.right-panel h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* ---------------- mAP BAR ---------------- */
+
+.model-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+
+  background: #28a745;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.model-button:hover {
+  background: #218838;
+}
+.graphs-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #2c7be5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.graphs-button:hover {
+  background: #1a5fd0;
+}
+/* ---------------- PREDICTIONS ---------------- */
+
+.right-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prediction-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.prediction-item strong {
+  font-size: 15px;
+}
+
+.prediction-desc {
+  font-size: 13px;
+  color: #555;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+/* Scroll styling */
+
+.right-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.right-panel::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+.right-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
