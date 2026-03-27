@@ -23,3 +23,4 @@ outputs/
 # -----------------------------
 .vscode/
 .DS_Store
+/dataset_small
