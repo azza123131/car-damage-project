@@ -1,26 +1,12 @@
-# -----------------------------
 # Python
-# -----------------------------
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# -----------------------------
-# Virtual environments
-# -----------------------------
-venv/
+backend/__pycache__/
 backend/venv/
 
-# -----------------------------
-# Dataset & outputs
-# -----------------------------
-dataset_small/
-outputs/
+# Model weights (tracked by DVC)
+backend/model/best.pt
 
-# -----------------------------
-# IDE / OS files
-# -----------------------------
-.vscode/
-.DS_Store
-/dataset_small
+# Data (tracked by DVC)
+data/
+
+# Outputs
+backend/outputs/
