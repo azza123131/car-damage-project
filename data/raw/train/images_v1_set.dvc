@@ -1,0 +1,6 @@
+outs:
+- md5: 2d771823f95de5a093d269ab1a13056b.dir
+  size: 36765195
+  nfiles: 100
+  hash: md5
+  path: images_v1_set
