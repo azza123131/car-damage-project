@@ -5,8 +5,11 @@ backend/venv/
 # Model weights (tracked by DVC)
 backend/model/best.pt
 
-# Data (tracked by DVC)
-data/
+# Data contents ignored (tracked by DVC)
+data/raw/train/images/
+data/raw/train/labels/
+data/raw/val/
+data/raw/test/
 
 # Outputs
 backend/outputs/
