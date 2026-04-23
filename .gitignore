@@ -16,3 +16,24 @@ backend/outputs/
 
 # Allow DVC pointer files
 !*.dvc
+
+# MLflow
+mlruns/
+mlartifacts/
+mlflow.db
+
+# Training runs
+runs/
+
+# Model weights
+*.pt
+
+# DVC local storage
+dvc-storage/
+
+# Cache files
+*.cache
+
+# Dataset images/labels (tracked by DVC)
+data/raw/train/images_v0_set/
+data/raw/train/images_v1_set/
