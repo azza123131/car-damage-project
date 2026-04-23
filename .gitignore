@@ -13,4 +13,6 @@ data/raw/test/
 
 # Outputs
 backend/outputs/
-/data
+
+# Allow DVC pointer files
+!*.dvc
