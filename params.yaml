@@ -1,0 +1,10 @@
+data:
+  version: "v1"
+  num_images: 50
+  yaml_path: "data/raw/data.yaml"
+
+train:
+  epochs: 5
+  batch_size: 4
+  imgsz: 640
+  model: "yolov8m.pt"
