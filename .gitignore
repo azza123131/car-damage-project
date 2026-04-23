@@ -13,3 +13,4 @@ data/raw/test/
 
 # Outputs
 backend/outputs/
+/data
