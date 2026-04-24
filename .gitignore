@@ -37,3 +37,5 @@ dvc-storage/
 # Dataset images/labels (tracked by DVC)
 data/raw/train/images_v0_set/
 data/raw/train/images_v1_set/
+
+*.cache
